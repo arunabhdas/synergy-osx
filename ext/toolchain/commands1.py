@@ -769,10 +769,10 @@ class InternalCommands:
 
 			(qMajor, qMinor, qRev) = self.getQmakeVersion()
 			if qMajor <= 4:
-				frameworkRootDir = "/Library/Frameworks"
+				frameworkRootDir = "/usr/local/Cellar/qt/4.8.7_2/Frameworks"
 			else:
 				# TODO: auto-detect, qt can now be installed anywhere.
-				frameworkRootDir = "/Developer/Qt5.2.1/5.2.1/clang_64/lib"
+				frameworkRootDir = "/usr/local/Cellar/qt/4.8.7_2/Frameworks"
 
 			target = bundleTargetDir + "/Contents/Frameworks"
 
