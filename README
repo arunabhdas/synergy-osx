@@ -13,4 +13,25 @@ Linux and Mac).
 For detailed compile instructions:
 http://synergy-project.org/wiki/Compiling
 
-Happy hacking!
+
+=======
+
+
+This repo is targeted for OSX El Capitan and Yosemite
+
+You will need Qt which you can get either with homebrew via: 
+
+brew install qt
+
+or you may use http://www.qt.io/download/
+
+
+Build for El Capitan:
+
+./hm.sh conf -g1 --mac-sdk 10.11 --mac-identity test
+./hm.sh
+
+Build for Yosemite:
+
+./hm.sh conf -g1 --mac-sdk 10.10 --mac-identity test
+./hm.sh build
